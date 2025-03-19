@@ -12,9 +12,12 @@ const Statistics = ({ className }: StatisticsProps) => {
       className={clsx("flex flex-col gap-y-4 overflow-auto px-2", className)}
     >
       {monthlySummary.map(
-        ({ month, clientes, cashback, ventas_totales, monto_total }) => {
+        ({ month, clientes, cashback, ventas_totales, monto_total }, index) => {
           return (
-            <div className="rounded-xl border bg-white p-4 shadow-sm">
+            <div
+              key={index}
+              className="rounded-xl border bg-white p-4 shadow-sm"
+            >
               <h4 className="text-center font-medium">{month}</h4>
               <ul className="[&>li]:flex [&>li]:justify-between">
                 <li>
@@ -36,8 +39,8 @@ const Statistics = ({ className }: StatisticsProps) => {
                   <span>Acomulado</span>
                   <p>{cashback.acumulado.toLocaleString()}</p>
                 </li>
-                {cashback.facturado.map(({ fecha, monto }) => (
-                  <li>
+                {cashback.facturado.map(({ fecha, monto }, index) => (
+                  <li key={index}>
                     <span>Facturado {fecha}</span>
                     <p>$ {monto.toLocaleString()}</p>
                   </li>

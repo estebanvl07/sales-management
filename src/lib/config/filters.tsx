@@ -1,4 +1,4 @@
-import { Series } from "~/types/chart.types";
+import type { Series } from "~/types/chart.types";
 import {
   MAIN_FILTERS,
   WEEK_FILTERS,

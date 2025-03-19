@@ -2,7 +2,7 @@ import { Tab, Tabs } from "@heroui/tabs";
 import React from "react";
 import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
 import StarIcon from "@mui/icons-material/Star";
-import { GraphicMode, useFilterContext } from "~/context/filterContext";
+import { type GraphicMode, useFilterContext } from "~/context/filterContext";
 
 const ViewToggle = () => {
   const { setMode } = useFilterContext();
