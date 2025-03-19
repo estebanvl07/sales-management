@@ -2,12 +2,11 @@ import { GeistSans } from "geist/font/sans";
 import { type AppType } from "next/app";
 import clsx from "clsx";
 
-import { api } from "~/utils/api";
-
 import "~/styles/globals.css";
 import GlobalLayout from "~/components/GlobalLayout";
 import Head from "next/head";
 import { HeroUIProvider } from "@heroui/react";
+import { FilterProvider } from "~/context/filterContext";
 
 const App: AppType = ({ Component, pageProps }) => {
   return (
@@ -19,13 +18,15 @@ const App: AppType = ({ Component, pageProps }) => {
       </Head>
       <HeroUIProvider>
         <div className={clsx(GeistSans.className)}>
-          <GlobalLayout>
-            <Component {...pageProps} />
-          </GlobalLayout>
+          <FilterProvider>
+            <GlobalLayout>
+              <Component {...pageProps} />
+            </GlobalLayout>
+          </FilterProvider>
         </div>
       </HeroUIProvider>
     </>
   );
 };
 
-export default api.withTRPC(App);
+export default App;

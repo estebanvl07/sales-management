@@ -1,0 +1,46 @@
+{
+  "monthlySummary": [
+    {
+      "month": "Noviembre",
+      "clientes": 105000,
+      "ventas_totales": 2300,
+      "monto_total": 130000000,
+      "cashback": {
+        "acumulado": 800000,
+        "facturado": [
+          { "fecha": "01/11", "monto": 350000 },
+          { "fecha": "10/11", "monto": 420000 },
+          { "fecha": "20/11", "monto": 140000 }
+        ]
+      }
+    },
+    {
+      "month": "Octubre",
+      "clientes": 103000,
+      "ventas_totales": 2200,
+      "monto_total": 125000000,
+      "cashback": {
+        "acumulado": 750000,
+        "facturado": [
+          { "fecha": "01/10", "monto": 330000 },
+          { "fecha": "10/10", "monto": 400000 },
+          { "fecha": "20/10", "monto": 130000 }
+        ]
+      }
+    },
+    {
+      "month": "Septiembre",
+      "clientes": 101000,
+      "ventas_totales": 2100,
+      "monto_total": 120000000,
+      "cashback": {
+        "acumulado": 700000,
+        "facturado": [
+          { "fecha": "01/09", "monto": 350000 },
+          { "fecha": "10/09", "monto": 380000 },
+          { "fecha": "20/09", "monto": 120000 }
+        ]
+      }
+    }
+  ]
+}

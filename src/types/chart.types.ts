@@ -1,6 +1,7 @@
 export type Series = {
   color?: string;
   name: string;
+  type?: string;
   data: number[];
 };
 

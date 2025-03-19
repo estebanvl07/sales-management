@@ -6,7 +6,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
   content: [
     "./src/**/*.tsx",
-    "./node_modules/@heroui/theme/dist/components/tabs.js",
+    "./node_modules/@heroui/theme/dist/components/(button|tabs|ripple|spinner).js"
   ],
   theme: {
     light: {

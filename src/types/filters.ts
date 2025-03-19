@@ -1,4 +1,5 @@
 export const MAIN_FILTERS = {
+  pulse: "pulse",
   today: "today",
   week: "week",
   month: "month",
@@ -44,3 +45,10 @@ export const YEAR_FILTERS = {
   november: "november",
   december: "december",
 } as const;
+
+export const PULSE_FILTERS = {
+  all: "all",
+  month_1: "month_1",
+  month_2: "month_2",
+  month_3: "month_3",
+};

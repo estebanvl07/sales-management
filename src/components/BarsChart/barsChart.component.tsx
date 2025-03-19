@@ -111,11 +111,11 @@ const BarChart = ({
                         <div class="flex gap-8 w-full justify-between">
 
                             <div class="flex gap-2 items-center">
-                                <div class="w-3 h-3 bg-indigo-300 rounded-full"></div>
+                                <div class="w-3 h-3 bg-primary rounded-full"></div>
                                 ${title}
                             </div>
                             <span class="font-semibold">
-                                $ ${currentValue.toLocaleString()}
+                                ${currentValue.toLocaleString()}
                             </span>
 
                         </div>
@@ -143,7 +143,7 @@ const BarChart = ({
             style: {
               // fontFamily: FONT_FAMILY,
               colors: isDark ? "#64748b" : "#000",
-              fontWeight: 600,
+              fontWeight: 400,
               fontSize: "13",
             },
           },
@@ -161,7 +161,7 @@ const BarChart = ({
             style: {
               colors: isDark ? "#f3f4f6" : "#000",
               // fontFamily: FONT_FAMILY,
-              fontWeight: 600,
+              fontWeight: 400,
             },
           },
         },

@@ -1,4 +1,4 @@
-import React, { Key } from "react";
+import React from "react";
 import Paper from "@mui/material/Paper";
 import TableLayout from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -22,7 +22,7 @@ const Table = <T,>({
 
   return (
     <TableContainer
-      className="!rounded-xl border !bg-content3 pt-3 !shadow-sm"
+      className="overflow-auto !rounded-xl border !bg-content3 pt-3 !shadow-sm"
       component={Paper}
     >
       {hasTopContent && headerConfig.title && (
